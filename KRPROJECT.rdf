@@ -1,0 +1,634 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#controls"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#hasSubComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#hasSubComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#isControlledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#isControlledBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ControlSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#monitors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#monitors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#hasID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#hasSerialNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#hasSerialNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The serial Number of the Machine</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Actuator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Actuator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#AssemblySystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#AssemblySystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#AutomationSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#AutomationSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BeltConveyor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BeltConveyor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ConveyorSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BeltDrive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BeltDrive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BendingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BendingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BlowMoldingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BlowMoldingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BrakeSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#BrakeSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CNC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CNC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CNC_Lathe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CNC_Lathe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Lathe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CNC_MillingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CNC_MillingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#MillingMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CastingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CastingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ChainConveyor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ChainConveyor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ConveyorSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ChainDrive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ChainDrive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CircuitBreaker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CircuitBreaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ElectricalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ClampingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ClampingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ClutchSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ClutchSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ControlSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ControlSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ConveyorSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ConveyorSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CoolingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CoolingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PowerSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Coupling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Coupling"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CuttingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#CuttingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#DrillingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#DrillingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#DriveSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#DriveSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ElectricalSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ElectricalSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#EngineLathe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#EngineLathe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Lathe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ExtrusionMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ExtrusionMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Fixture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Fixture"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ForgingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ForgingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#FormingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#FormingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Gearbox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Gearbox"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#GrindingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#GrindingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HorizontalMillingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HorizontalMillingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#MillingMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicCylinder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicCylinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicPump -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicPump">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#InjectionMoldingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#InjectionMoldingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#InspectionSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#InspectionSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Jig -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Jig"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Lathe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Lathe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#LubricationSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#LubricationSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ManufacturingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ManufacturingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#MaterialHandlingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#MaterialHandlingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#MillingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#MillingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PackagingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PackagingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PneumaticSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PneumaticSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PolishingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PolishingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PowerSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PowerSource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PowerTransmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PowerTransmission"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PressMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PressMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ProcessingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ProcessingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PunchingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PunchingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#RadialDrillingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#RadialDrillingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#DrillingMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#RoboticSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#RoboticSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#RollerConveyor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#RollerConveyor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ConveyorSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#RollingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#RollingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#SafetySystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#SafetySystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#SawingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#SawingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ShearingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ShearingMachine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ToolingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ToolingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Transformer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Transformer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ElectricalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#TransmissionSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#TransmissionSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#TurretLathe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#TurretLathe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Lathe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#UprightDrillingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#UprightDrillingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#DrillingMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#VerticalMillingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#VerticalMillingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#MillingMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#WeldingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#WeldingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_CNC_DrillingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_CNC_DrillingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#DrillingMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_ElectricMotor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_ElectricMotor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#ElectricalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_HydraulicMotor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_HydraulicMotor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#HydraulicSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_PneumaticCylinder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_PneumaticCylinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PneumaticSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_PneumaticPump -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_PneumaticPump">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PneumaticSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_PneumaticValve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_PneumaticValve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#PneumaticSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_RobotArm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#-_RobotArm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Machine"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Lathe1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Lathe1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fatehali/ontologies/2024/5/untitled-ontology-2#Lathe"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
